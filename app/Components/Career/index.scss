@@ -1,0 +1,61 @@
+
+.career {
+  text-align: center;
+  height: 88vh;
+  width: 80vw;
+  padding: 10% 20px 10% 0;
+  //@media screen and (max-width: 1600px) {
+  //  padding: 0;
+  //}
+
+  &-content {
+    display: flex;
+    gap: 32px;
+    align-items: end;
+    justify-content: space-between;
+
+    text-align: left;
+
+    @media screen and (max-width: 1600px) {
+      align-items: center;
+    }
+
+    &-info {
+      width: 44%;
+    }
+
+    &-photos {
+      display: flex;
+      gap: 21px;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+
+      @media screen and (max-width: 1600px) {
+        gap: 10px;
+        width: 83%;
+      }
+
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.news-block-items-content-title {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1600px) {
+  .news-info-subtitle {
+    max-width: 333px;
+  }
+}
+
+//.news-info-subtitle {
+//  width: 100%;
+//  max-width: 100%;
+//}

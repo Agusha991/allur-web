@@ -1,0 +1,14 @@
+
+.language-switcher {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  @media screen and (max-width: 1600px) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

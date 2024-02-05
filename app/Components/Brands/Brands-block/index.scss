@@ -1,0 +1,38 @@
+
+.brands-block{
+  width: 54%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+
+  padding: 41px 4% 27px;
+
+  border-radius:  0 0 15px 15px;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(255, 255, 255, 0.05);
+
+  box-shadow: 0 3px 26px -9px #000;
+  backdrop-filter: blur(4px);
+  @media screen and (max-width: 1600px) {
+    padding: 41px 2% 27px;
+    img {
+      max-width:90px;
+      width: 100%;
+      height: 34px;
+    }
+  }
+}
+
+.brands-block-svg{
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1600px) {
+    svg {
+      width: 100%;
+      height: 34px;
+    }
+  }
+}

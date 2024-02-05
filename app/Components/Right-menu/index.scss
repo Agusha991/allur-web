@@ -1,0 +1,109 @@
+
+.header {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 10%;
+  z-index: 999;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 63px;
+  padding-bottom: 125px;
+  @media screen and (max-width: 1600px) {
+    padding-bottom: 60px;
+    padding-top: 33px;
+
+  }
+
+  background: linear-gradient(270deg, #262626 -6.77%, rgba(38, 38, 38, 0.00) 94.22%);
+
+  &-menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 45px;
+    margin-right: 72px;
+    @media screen and (max-width: 1600px) {
+      margin-right: 22px;
+    }
+
+    &-shop, &-profile {
+      cursor: pointer;
+      @media screen and (max-width: 1600px) {
+        img {
+          width: 18px;
+        }
+      }
+    }
+
+    &-bottom-tab {
+      height: 64px;
+      display: flex;
+      justify-content: end;
+      cursor: pointer;
+
+      img {
+        margin-right: -1px;
+        @media screen and (max-width: 1600px) {
+          margin-right: -6px;
+          height: 55px;
+        }
+      }
+
+      &-content {
+        width: 120px;
+        height: 65px;
+        background: #262626;
+        display: flex;
+        align-items: center;
+        transition: all 1s;
+        @media screen and (max-width: 1600px) {
+          width: 72px;
+          height: 55px;
+        }
+
+        img {
+          transition: all 1s ease;
+        }
+
+        &-all-items {
+          display: flex;
+          opacity: 0;
+          gap: 55px;
+          padding-right: 71px;
+          padding-left: 12px;
+
+          &-select {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            white-space: nowrap;
+            cursor: pointer;
+            @media screen and (max-width: 1600px) {
+              font-size: 14px;
+              white-space: nowrap;
+            }
+          }
+        }
+
+        .header-menu-bottom-tab:hover & {
+          width: 614px;
+
+          img {
+            display: none;
+          }
+
+          &-all-items {
+            opacity: 1;
+
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

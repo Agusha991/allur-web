@@ -1,0 +1,14 @@
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  video{
+    position: absolute;
+    width: 100vw;
+    object-fit: cover;
+    @media screen and (max-width: 1600px) {
+      width: auto;
+    }
+  }
+}

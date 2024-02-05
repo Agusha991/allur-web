@@ -1,0 +1,55 @@
+
+.theme-switcher{
+  width: 79px;
+  height: 42px;
+
+  border-radius: 28px;
+  background: #414141;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25) inset;
+
+  margin: 38px auto 0;
+  padding: 2px;
+
+  cursor: pointer;
+  transition-duration: 1s;
+
+  @media screen and (max-width: 1600px) {
+    height: 32px;
+    width: 60px;
+    margin: 18px auto 0;
+  }
+  &-white{
+    border-radius: 28px;
+
+    background: #C2C2C2;
+
+    padding-left: 40px;
+    transition-duration: 1s;
+
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.50) inset;
+
+    @media screen and (max-width: 1600px) {
+      padding-left: 30px;
+    }
+  }
+  &-icon{
+    width: 37px;
+    height: 37px;
+
+    border-radius: 50px;
+
+    background: #7B7B7B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1600px) {
+      width: 27px;
+      height: 27px;
+    }
+    &-swipe{
+
+    }
+  }
+}

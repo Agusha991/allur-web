@@ -1,0 +1,27 @@
+
+.header-block {
+  text-align: center;
+
+  img {
+    margin-top: 54px;
+    margin-bottom: 34px;
+    @media screen and (max-width: 1600px) {
+      margin-top: 24px;
+      margin-bottom: 14px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &-title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 133%;
+    padding-bottom: 23px;
+    @media screen and (max-width: 1600px) {
+      font-size: 22px;
+      line-height: 113%;
+    }
+  }
+}
